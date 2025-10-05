@@ -160,9 +160,10 @@ geslacht: {geslacht}");
              * in behandeling
              * afgerond
              */
-            Console.WriteLine("\n\nOefening C.2: waarde veranderen\n------------\n");
-            // TODO: implementeer hier.
-            // ...
+			string status = "in behandeling";
+            Console.WriteLine(status);
+			status = "afgerond";
+			Console.WriteLine(status);
 
             /* --- Oefening C.3: waarde optellen ---
              * Context: De score van een speler kan veranderen tijdens een spel.
@@ -177,9 +178,10 @@ geslacht: {geslacht}");
              * 50
              * 57
              */
-            Console.WriteLine("\n\nOefening C.3: waarde optellen\n------------\n");
-            // TODO: implementeer hier.
-            // ...
+			int resultaat = 50;
+            Console.WriteLine(resulaat);
+			resultaat = resultaat + 7;
+			Console.WriteLine(resultaat);
 
             /* --- Oefening C.4: variabele optellen bij andere variabele ---
              * Context: Voeg de waarde van één variabele toe aan een andere
