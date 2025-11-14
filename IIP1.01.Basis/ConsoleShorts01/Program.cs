@@ -179,7 +179,7 @@ geslacht: {geslacht}");
              * 57
              */
 			int resultaat = 50;
-            Console.WriteLine(resulaat);
+            Console.WriteLine(resultaat);
 			resultaat = resultaat + 7;
 			Console.WriteLine(resultaat);
 
@@ -201,7 +201,13 @@ geslacht: {geslacht}");
              */
             Console.WriteLine("\n\nOefening C.4: variabele optellen bij andere variabele\n------------\n");
             // TODO: implementeer hier.
-            // ...
+            int punten = 40;
+			Console.WriteLine($"je Punten: {punten}");
+			int bonus = 7;
+			Console.WriteLine($"Je Bonus: {bonus}");
+			punten += bonus;
+			Console.WriteLine($"Je totale punten: {punten}");
+			
 
             #endregion
 
@@ -221,7 +227,9 @@ geslacht: {geslacht}");
             Console.WriteLine("\n\nOefening D.1: escaping - aanhalingstekens\n------------\n");
             // TODO: implementeer hier.
             // ...
-
+			string quote = "Hij zei: \"Hallo Wereld\"";
+			Console.WriteLine(quote);
+			
             /* --- Oefening D.2: Escaping - tabs en newlines ---
              * Context: Je wilt een korte, gestructureerde lijst afdrukken met één enkel `Console.WriteLine` statement.
              *
@@ -238,9 +246,15 @@ geslacht: {geslacht}");
              *     HTML
              *     Javascript
              */
+			 
             Console.WriteLine("\n\nOefening D.2: Escaping - tabs en newlines\n------------\n");
             // TODO: implementeer hier.
             // ...
+			Console.WriteLine($@"
+			Cursussen:
+			C#
+			HTML
+			Javascript");
 
             /* --- Oefening D.3: UTF-8 - Symbolen ---
              * Context: Je wilt speciale symbolen zoals het copyright- of euroteken correct weergeven in de console.
@@ -258,6 +272,8 @@ geslacht: {geslacht}");
             Console.WriteLine("\n\nOefening D.3: UTF-8 - Symbolen\n------------\n");
             // TODO: implementeer hier.
             // ...
+			Console.OutputEncoding = Encoding.UTF8;
+			Console.Write("Prijs €25 \r\nCopyright ©2024");
 
             #endregion
 
@@ -277,6 +293,7 @@ geslacht: {geslacht}");
              * 8. Druk de tekst "druk een toets om nu te herstarten".
              *
              * Verwachte uitvoer (met de juiste voor- en achtergrondkleur):
+			 
 			 * alle bestanden gekopieerd
              * systeem wordt over 5 minuten herstart.
              * druk een toets om nu te herstarten
@@ -284,7 +301,15 @@ geslacht: {geslacht}");
             Console.WriteLine("\n\nOefening E.1: Console Kleuren - Achtergrond\n------------\n");
             // TODO: implementeer hier.
             // ...
-
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.WriteLine("Alle bestanden gekopierd");
+			Console.ForegroundColor = ConsoleColor.Yellow;
+			Console.BackgroundColor = ConsoleColor.DarkBlue;
+			Console.WriteLine("Systeem word over 5 minuten herstart.");
+			Console.Write("");
+			Console.ResetColor();
+			Console.WriteLine("");
+			Console.WriteLine("Druk een toets om nu te herstarten");
             #endregion
 
         }
