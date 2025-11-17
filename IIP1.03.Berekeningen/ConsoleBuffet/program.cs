@@ -33,14 +33,26 @@ namespace ConsoleBuffet
 			Console.WriteLine($"Afgerond naar beneden: € {afgerondTotaal}");
 			Console.Write("Cash betaald: € ");
 			int cash = Convert.ToInt32(Console.ReadLine());
+			int wisselgeld = cash - afgerondTotaal;
 			Console.WriteLine("U krijgt terug:");
-			int wisselgeld j
-			
-
-			
-			
-			
-			
+			int briefjesVan50 = wisselgeld / 50;
+			wisselgeld = wisselgeld % 50;
+			Console.WriteLine($"- {briefjesVan50} briefje(s) van 50");
+			int briefjesVan20 = wisselgeld / 20;
+			wisselgeld = wisselgeld % 20;
+			Console.WriteLine($"- {briefjesVan20} briefje(s) van 20");
+			int briefjesVan10 = wisselgeld / 10;
+			wisselgeld = wisselgeld % 10;
+			Console.WriteLine($" - {briefjesVan10} briefje(s) van 10");
+			int briefjesvan5 = wisselgeld / 5;
+			wisselgeld = wisselgeld % 5;
+			Console.WriteLine($" - {briefjesvan5} briefje(s) van 5");
+			int muntstuk2 = wisselgeld / 2;
+			wisselgeld = wisselgeld % 2;
+			Console.WriteLine($" - {muntstuk2} stuk(ken) van 2");
+			int muntstuk1 = wisselgeld / 1;
+			wisselgeld = wisselgeld % 1;
+			Console.WriteLine($" - {muntstuk1} stuk(ken) van 1");
 		}
 	}
 }
