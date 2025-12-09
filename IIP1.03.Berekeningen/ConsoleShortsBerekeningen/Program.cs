@@ -35,14 +35,14 @@ class Program
          * Verwachte output: 87.5
          */
         // TODO: implementeer hier
-
-        Console.WriteLine("\n---------------------\n");
+		
 		int score1 = 80;
 		int score2 = 95;
 		double gemiddelde = score1 + score2;
 		double totaalScore = gemiddelde / 2;
 		Console.WriteLine($" {totaalScore:F2} ");
-		
+
+        Console.WriteLine("\n---------------------\n");
 
         /* --- Oefening 2: Modulo en Increment ---
          * Context: Je wilt de rest van een deling weten en daarna een teller verhogen.
@@ -60,6 +60,13 @@ class Program
          * Het nieuwe aantal is: 16
          */
         // TODO: implementeer hier
+		
+		int aantalItems = 15;
+		int itemsPerDoos = 4;
+		int rest = aantalItems % itemsPerDoos;
+		aantalItems++;
+		Console.WriteLine("De rest is: " + rest); 
+		Console.WriteLine("Het nieuwe aantal is: " + aantalItems);
 
         Console.WriteLine("\n---------------------\n");
 
@@ -77,6 +84,11 @@ class Program
          * 7
          */
         // TODO: implementeer hier
+		
+		double totaalbedrag = 45.75;
+		double berekening = totaalbedrag / 100 * 15;
+		double fooi = Math.Ceiling(berekening);
+		Console.WriteLine($"Fooi: {fooi}");
 
         Console.WriteLine("\n---------------------\n");
 
@@ -94,7 +106,11 @@ class Program
          * P123
          */
         // TODO: implementeer hier
-
+		
+		char prefix = ('P');
+		int nummer = (123);
+		string productCode = prefix.ToString() + nummer.ToString();
+		
         Console.WriteLine("\n---------------------\n");
 
         /* --- Oefening 5: Werken met strings ---
@@ -112,6 +128,13 @@ class Program
          * 5
          */
         // TODO: implementeer hier
+		
+		string gebruikersNaam = "  Frank";
+		string trimUpper = gebruikersNaam.Trim().ToUpper();
+		int aantal = gebruikersNaam.Length;
+		string Naam = trimUpper;
+		Console.WriteLine($"{Naam}");
+		Console.WriteLine($"{aantal}");
 
         Console.WriteLine("\n---------------------\n");
 
@@ -128,6 +151,11 @@ class Program
          * Verwachte output: True
          */
         // TODO: implementeer hier
+		
+		bool isVoldoendeScore = true;
+		bool heeftAanwezigheid = true;
+		bool true1 = isVoldoendeScore && heeftAanwezigheid;
+		Console.WriteLine(true1);
 
         Console.WriteLine("\n---------------------\n");
 
@@ -145,6 +173,11 @@ class Program
          * Het ingevoerde getal is: 42
          */
         // TODO: implementeer hier
+		
+		Console.Write("Voer een getal in: ");
+		string invoerTekst = Console.ReadLine();
+		int invoerGetal = Convert.ToInt32(invoerTekst);
+		Console.WriteLine($"Het ingevoerde getal is {invoerGetal}");
 
         Console.WriteLine("\n---------------------\n");
 
@@ -162,6 +195,10 @@ class Program
          * 10.00
          */
         // TODO: implementeer hier
+		
+		double prijs = 9.995;
+		string geformatteerdePrijs = prijs.ToString("F2");
+		Console.WriteLine($"{geformatteerdePrijs}");
 
         Console.WriteLine("\n---------------------\n");
 
@@ -178,6 +215,9 @@ class Program
          * Vandaag is dag 25 in maand 9
          */
         // TODO: implementeer hier
+		
+		DateTime huidigeDatum = DateTime.Now;
+		Console.WriteLine($"Vadaag is dag {huidigeDatum.Day} in maand {huidigeDatum.Month}");
 
         Console.WriteLine("\n---------------------\n");
 
